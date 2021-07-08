@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ products }}</h1>
+<form action="" method="get">
+    <input type="date" name="date" placeholder="Выберите дату">
+    <input type="submit" value="отправить">
+</form>
+
+<hr>
+{% for review in review %}
+<h4>Отзывы: {{ review }}</h4>
+    <p>цена товара:{{ products.price }}с</p>
+    <p>Категория:{{ products.category }}</p>
+    <p>Описание товара:{{ products.description }}</p>
+    <p>Дата:{{ products.MFD }}</p>
+{% endfor %}
+
+</body>
+</html>
